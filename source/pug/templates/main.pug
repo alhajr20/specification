@@ -4,26 +4,82 @@ html(lang="ru")
 	head
 		meta(charset='utf-8')
 		meta(http-equiv='x-ua-compatible' content='ie=edge')
-		title
-			block title
+		title NVIDIA
 		meta(name='description' content='')
 		meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
 		link(rel='shortcut icon' type='image/x-icon' href='favicon.ico')
 		//- add '?@@timestamp' postfix to assets files (styles, scripts, images...) for fix browser caching problems
-		link(rel='stylesheet' href='css/style.min.css?@@timestamp')
+		link(rel='stylesheet' href='css/main.min.css')
 	body
 		.page-wrapper
-			block variables
-				include ../global/_variables
+			header.header
+				.container
+					.header__flex
+						.header__logo
+							img(src="img/logo.webp", alt="header's logo")
+						.header__links
+							nav.header__nav
+								ul
+									li
+										a(href="javascript:void(0);") Продукты
+									li
+										a(href="javascript:void(0);") Технологии
+									li
+										a(href="javascript:void(0);") Experience
+							.header__social
+								a(href="javascript:void(0);")
+									img(src="img/icons/twitter.svg", alt="twitter")
+								a(href="javascript:void(0);")
+									img(src="img/icons/instagram.svg", alt="instagram")
+						.header__burger
+							span
+			section.advantages
+				.container
+					.advantages__info
+						h1.title ПРЕИМУЩЕСТВА G&#8209;SYNC
+						p.descr Каждый монитор с технологией G&#8209;SYNC проходит серьезное тестирование и контроль качества для обеспечения максимальной производительности. Сотни мониторов проходят контроль качества, но только прошедшие все тесты получают сертификацию G&#8209;SYNC.
+					.advantages__flex
+						figure.advantages__item
+							img(src="img/1.png", alt="advantage image")
+							figcaption
+								h2.title
+									span.green HDR
+									|	DISPLAY
+								p.descr Получите более широкий и комфортный для восприятия диапазон цветовой гаммы, чем в обычных мониторах.
+						figure.advantages__item
+							img(src="img/2.png", alt="advantage image")
+							figcaption
+								h2.title
+									span.green INPUT
+									|    LAG
+								p.descr Мониторы с технологией G&#8209;SYNC обеспечивают минимальную задержку между нажатием клавиш и результатом на экране, что очень важно для геймеров.
+						figure.advantages__item
+							img(src="img/3.png", alt="advantage image")
+							figcaption
+								h2.title
+									span.green HIGH REFRESH
+									|    RATE
+								p.descr NVIDIA тесно сотрудничает с производителями мониторов, чтобы вывести на рынок широкий спектр дисплеев с высокой частотой обновления экрана от 75 до 360 Гц.
+						figure.advantages__item
+							img(src="img/4.png", alt="advantage image")
+							figcaption
+								h2.title
+									span.green WIDE COLOR
+									|    GAMUT
+								p.descr Современные мониторы G&#8209;SYNC ULTIMATE поддерживают цветовой охват DCI&#8209;P3, обеспечивая более реалистичную цветопередачу с плавными переходами.
+					a(href="javascript:void(0);").btn.btn-show КУПИТЬ
+			.buy-window
+				.modal
+					button.close
+						img(src="img/icons/close.png", alt="close icon")
+					form.form
+						h2.title ПРЕИМУЩЕСТВА G&#8209;SYNC
+						.input-group
+							input(placeholder="Имя", type="text")
+						.input-group
+							input(placeholder="Mail", type="email")
+						button(type="submit").btn Купить
 
-			block header
-				include ../global/header
 
-			block main
 
-			block footer
-				include ../global/footer
-
-			block modal
-
-		script(src='js/script.min.js?@@timestamp')
+		script(src='js/app.min.js')

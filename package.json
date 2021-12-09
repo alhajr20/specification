@@ -1,9 +1,30 @@
 {
+  "scripts": {
+    "start": "gulp"
+  },
   "dependencies": {
     "gulp": "4.0.2",
     "bootstrap": "4.4.1",
     "bootstrap-gulp": "3.1.5-beta",
     "magnific-popup": "1.1.0",
-    "roboto-fontface-pre-css": "0.0.3"
+    "roboto-fontface-pre-css": "0.0.3",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "babel-plugin-root-import": "^6.6.0",
+    "browser-sync": "^2.26.12",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-cli": "^2.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^6.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "gulp-babel": "^8.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-pug": "^5.0.0"
   }
 }
